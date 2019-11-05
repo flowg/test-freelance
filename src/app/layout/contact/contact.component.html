@@ -1,0 +1,33 @@
+<h1>Contact</h1>
+<main>
+  <form (ngSubmit)="onSubmit()" [formGroup]="formGroup">
+    <label class="center-block">Name:
+      <input class="form-control" formControlName="name">
+    </label>
+    <div *ngIf="name.invalid && (name.dirty || name.touched) && name.errors.required" class="alert">
+      Name is required.
+    </div>
+
+    <label class="center-block">E-mail:
+      <input class="form-control" formControlName="email">
+    </label>
+    <div *ngIf="email.invalid && (email.dirty || email.touched) && email.errors.required" class="alert">
+      Email is required.
+    </div>
+
+    <label class="center-block">Phone Number:
+      <input class="form-control" formControlName="phoneNumber">
+    </label>
+    <div *ngIf="phoneNumber.invalid && (phoneNumber.dirty || phoneNumber.touched) && phoneNumber.errors.required" class="alert">
+      Phone number is required.
+    </div>
+
+
+    <label class="center-block">
+      <input type="checkbox" formControlName="shouldAddToNewsletter">
+      Would you like to receive our newsletter ?
+    </label>
+
+    <button>SUBMIT</button>
+  </form>
+</main>
