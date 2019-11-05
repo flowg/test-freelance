@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +24,7 @@ import { HeaderComponent } from './shared';
     AppRoutingModule,
     HttpClientModule,
     HttpModule,
-    NgbModule.forRoot()
+    // NgbModule.forRoot()
   ],
   bootstrap: [AppComponent]
 })

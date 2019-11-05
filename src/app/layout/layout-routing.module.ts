@@ -9,11 +9,16 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: './about/about.module#AboutModule'
-  }
+  },
+  {
+    path: 'contact',
+    loadChildren: './contact/contact.module#ContactModule'
+  },
 ];
 
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
+@NgModule( {
+  imports: [RouterModule.forChild( routes )],
   exports: [RouterModule]
-})
-export class LayoutRoutingModule { }
+} )
+export class LayoutRoutingModule {
+}
